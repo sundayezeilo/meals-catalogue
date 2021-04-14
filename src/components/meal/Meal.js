@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Recipe() {
+export default function Meal() {
   return (
     <div>
-      <Link to="/:name">Recipe</Link>
+      <Link to="/:name">Meal</Link>
     </div>
   );
 }
