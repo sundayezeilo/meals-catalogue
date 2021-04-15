@@ -23,21 +23,20 @@ const fetchMealsFailure = (error) => ({
 const fetchMeals = () => async (dispatch) => {
   dispatch(fetchMealsRequest);
   try {
-    const { data: categories } = await axios.get('https://www.themealdb.com/api/json/v1/1/categories.php');
-    const mealsList = {};
+    const { data: categories } = await axios.get('https://www.themealdb.com/api/json/v1/1/categories.php');    
     const arraOfPromises = categories.map((cat) => {
       return axios.get(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${cat.strCategory}`);
     });
     const allMeals = await Promise.all(arrOfPromises);
-    categories.forEach((cat, idx) => {
-      const thisCatMeals = {
-        categoryThumb: cat.strCategoryThumb,
-        categoryDescription: cat.strCategoryDescription,
+    const meals = categories.reduce((acc, currVal, idx) => {
+      return (acc[currVal.strCategory] = {
+        categoryThumb: currVal.strCategoryThumb,
+        categoryDescription: currVal.strCategoryDescription,
         categoryMeals: allMeals[idx],
-      };
-      mealsList[cat.strCategory] = thisCatMeals;
-    });
-    dispatch(fetchMealsSuccess(mealsList));
+      });
+      
+    }, {});
+    dispatch(fetchMealsSuccess(meals));
   } catch (err) {
     dispatch(fetchMealsFailure(err.message));
   }
