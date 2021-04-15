@@ -2,18 +2,22 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-export default function Meal({ strMeal, strMealThumb }) {
+export default function Meal({ meal }) {
   return (
     <div>
       <Link to="/:name">
-        <p>{strMeal}</p>
-        <p>{strMealThumb}</p>
+        <p>{meal.strMeal}</p>
+        <p>{meal.strMealThumb}</p>
       </Link>
     </div>
   );
 }
 
 Meal.propTypes = {
-  strMeal: PropTypes.objectOf(PropTypes.string).isRequired,
-  strMealThumb: PropTypes.objectOf(PropTypes.string).isRequired,
+  meal: PropTypes.exact(
+    {
+      strMeal: PropTypes.string,
+      strMealThumb: PropTypes.string,
+    },
+  ).isRequired,
 };

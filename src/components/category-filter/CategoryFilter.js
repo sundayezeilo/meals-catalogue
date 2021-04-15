@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function CategoryFilter({ categoryList, onChangeFilter }) {
+export default function CategoryFilter({ categoryList, onFilterChange }) {
   const allMealCategories = ['All', ...categoryList];
 
   const handleFilterChange = ({ target: { value } }) => {
-    onChangeFilter(value);
+    onFilterChange(value);
   };
 
   return (
@@ -21,6 +21,6 @@ export default function CategoryFilter({ categoryList, onChangeFilter }) {
 }
 
 CategoryFilter.propTypes = {
-  onChangeFilter: PropTypes.func.isRequired,
+  onFilterChange: PropTypes.func.isRequired,
   categoryList: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

@@ -11,6 +11,7 @@ export default function MealList() {
   useEffect(() => {
     console.log('MealList mounted');
     dispatch(fetchMeals());
+    console.log('fetchMeals action dispatched');
     return () => {
       // cleanup
     };
@@ -19,8 +20,6 @@ export default function MealList() {
   const meals = filter === 'All' ? useSelector((state) => state.meals)
     : useSelector((state) => state.meals);
   const allCat = Object.keys(meals.mealList);
-
-  console.log('Meal List -> Beef\n', meals.mealList['Beef'].categoryMeals);
 
   function handleFilterChange(filter) {
     dispatch(changeFilter(filter));
@@ -32,13 +31,13 @@ export default function MealList() {
   if (meals.error) {
     return <h2>{meals.error}</h2>;
   }
-  // console.log(meals.mealList['Beef'].categoryMeals);
+
   return (
     <div className="meal-list">
-      <CategoryFilter onChangeFilter={handleFilterChange} categoryList={allCat} />
+      <CategoryFilter onFilterChange={handleFilterChange} categoryList={allCat} />
       {
         allCat && allCat.map((catName) => (
-          meals.mealList[catName].categoryMeals.map((thisMeal, idx) => (
+          meals.mealList[catName]['categoryMeals'].map((thisMeal, idx) => (
             <Meal meal={thisMeal} key={`catMeal${idx + 1}`} />
           ))
         ))
