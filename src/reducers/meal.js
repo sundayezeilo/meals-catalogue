@@ -1,9 +1,8 @@
 import {
   FETCH_MEALS_REQUEST,
   FETCH_MEALS_SUCCESS,
-  FETCH_MEALS_FAILURE
+  FETCH_MEALS_FAILURE,
 } from '../action-types/index';
-
 
 const mealReducer = (state = {}, { type, payload }) => {
   switch (type) {
