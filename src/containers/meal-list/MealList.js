@@ -8,26 +8,41 @@ export default function MealList() {
   const dispatch = useDispatch();
   const filter = useSelector((state) => state.filter);
 
-  const meals = filter === 'All' ? useSelector((state) => state.meals)
-    : useSelector((state) => state.meals).filter((book) => book.category === filter);
-
   useEffect(() => {
+    console.log('MealList mounted');
     dispatch(fetchMeals());
     return () => {
       // cleanup
     };
   }, []);
 
+  const meals = filter === 'All' ? useSelector((state) => state.meals)
+    : useSelector((state) => state.meals);
+  const allCat = Object.keys(meals.mealList);
+
+  console.log('Meal List -> Beef\n', meals.mealList['Beef'].categoryMeals);
+
   function handleFilterChange(filter) {
     dispatch(changeFilter(filter));
   }
 
+  if (meals.loading) {
+    return <h2>Loading...</h2>;
+  }
+  if (meals.error) {
+    return <h2>{meals.error}</h2>;
+  }
+  // console.log(meals.mealList['Beef'].categoryMeals);
   return (
-    <div className="book-list">
-      <CategoryFilter changeFilter={handleFilterChange} categoryList={Object.keys(meals)} />
-      {meals.map((catMealsArray, idx) => (
-        <Meal meal={catMealsArray} key={`catMeal${idx + 1}`} />
-      ))}
+    <div className="meal-list">
+      <CategoryFilter onChangeFilter={handleFilterChange} categoryList={allCat} />
+      {
+        allCat && allCat.map((catName) => (
+          meals.mealList[catName].categoryMeals.map((thisMeal, idx) => (
+            <Meal meal={thisMeal} key={`catMeal${idx + 1}`} />
+          ))
+        ))
+      }
     </div>
   );
 }

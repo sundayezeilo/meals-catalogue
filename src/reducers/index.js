@@ -4,7 +4,7 @@ import filterReducer from './filter';
 
 const rootReducer = combineReducers({
   meals: mealReducer,
-  changeFilter: filterReducer,
+  filter: filterReducer,
 });
 
 export default rootReducer;

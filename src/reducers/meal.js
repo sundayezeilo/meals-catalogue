@@ -4,7 +4,13 @@ import {
   FETCH_MEALS_FAILURE,
 } from '../action-types/index';
 
-const mealReducer = (state = {}, { type, payload }) => {
+const initialState = {
+  loading: false,
+  mealList: {},
+  error: '',
+};
+
+const mealReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case FETCH_MEALS_REQUEST:
       return {
@@ -15,14 +21,14 @@ const mealReducer = (state = {}, { type, payload }) => {
     case FETCH_MEALS_SUCCESS:
       return {
         loading: false,
-        meals: payload,
+        mealList: payload,
         error: '',
       };
 
     case FETCH_MEALS_FAILURE:
       return {
         loading: false,
-        meals: '',
+        mealList: '',
         error: payload,
       };
 
