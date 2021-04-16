@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { changeFilter, fetchMeals } from '../../actions/index';
-import Meal from '../../components/meal/Meal';
+import Meal from '../../components/Meal/Meal';
 import CategoryFilter from '../../components/category-filter/CategoryFilter';
 import './MealList.css';
 
