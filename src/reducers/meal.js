@@ -6,7 +6,7 @@ import {
 
 const initialState = {
   loading: false,
-  mealList: {},
+  mealList: [],
   error: '',
 };
 

@@ -7,37 +7,37 @@ import CategoryFilter from '../../components/category-filter/CategoryFilter';
 export default function MealList() {
   const dispatch = useDispatch();
   const filter = useSelector((state) => state.filter);
+  const allMeals = useSelector((state) => state.meals.mealList);
 
   useEffect(() => {
-    console.log('MealList mounted');
+    
     dispatch(fetchMeals());
-    console.log('fetchMeals action dispatched');
     return () => {
       // cleanup
     };
   }, []);
 
-  const meals = filter === 'All' ? useSelector((state) => state.meals)
-    : useSelector((state) => state.meals);
-  const allCat = Object.keys(meals.mealList);
+  const filteredMeals = filter === 'All' ? allMeals : allMeals.filter((meal) => meal.mealCategory === filter);
+
+  const allCat = allMeals.map((meal) => meal.mealCategory);
 
   function handleFilterChange(filter) {
     dispatch(changeFilter(filter));
   }
 
-  if (meals.loading) {
+  if (filteredMeals.loading) {
     return <h2>Loading...</h2>;
   }
-  if (meals.error) {
-    return <h2>{meals.error}</h2>;
+  if (filteredMeals.error) {
+    return <h2>{filteredMeals.error}</h2>;
   }
 
   return (
     <div className="meal-list">
       <CategoryFilter onFilterChange={handleFilterChange} categoryList={allCat} />
       {
-        allCat && allCat.map((catName) => (
-          meals.mealList[catName]['categoryMeals'].map((thisMeal, idx) => (
+        filteredMeals.map((catMeals) => (
+          catMeals.meals.map((thisMeal, idx) => (
             <Meal meal={thisMeal} key={`catMeal${idx + 1}`} />
           ))
         ))
