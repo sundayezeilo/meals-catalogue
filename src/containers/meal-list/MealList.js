@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { changeFilter, fetchMeals } from '../../actions/index';
 import Meal from '../../components/meal/Meal';
 import CategoryFilter from '../../components/category-filter/CategoryFilter';
+import './MealList.css';
 
 export default function MealList() {
   const dispatch = useDispatch();
@@ -27,20 +28,23 @@ export default function MealList() {
   if (filteredMeals.loading) {
     return <h2>Loading...</h2>;
   }
+
   if (filteredMeals.error) {
     return <h2>{filteredMeals.error}</h2>;
   }
 
   return (
-    <div className="meal-list">
+    <div className="meals">
       <CategoryFilter onFilterChange={handleFilterChange} categoryList={allCat} />
-      {
-        filteredMeals.map((catMeals) => (
-          catMeals.meals.map((thisMeal, idx) => (
-            <Meal meal={thisMeal} key={`catMeal${idx + 1}`} />
+      <div className="meal-list">
+        {
+          filteredMeals.map((catMeals) => (
+            catMeals.meals.map((thisMeal, idx) => (
+              <Meal meal={thisMeal} key={`catMeal${idx + 1}`} />
+            ))
           ))
-        ))
-      }
+        }
+      </div>
     </div>
   );
 }

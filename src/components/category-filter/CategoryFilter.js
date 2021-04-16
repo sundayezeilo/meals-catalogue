@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './CategoryFilter.css';
 
 export default function CategoryFilter({ categoryList, onFilterChange }) {
   const allMealCategories = ['All', ...categoryList];

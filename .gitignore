@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+src/components/meal/MealCategory.js
+src/components/meal/MealCategory.css

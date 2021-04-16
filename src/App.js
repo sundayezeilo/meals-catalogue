@@ -10,7 +10,7 @@ import './App.css';
 export default function App() {
   return (
     <BrowserRouter>
-      <div>
+      <div className="app">
         <Navbar />
         <Switch>
           <Route exact path="/" component={MealList} />
