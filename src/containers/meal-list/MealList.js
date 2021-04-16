@@ -10,7 +10,6 @@ export default function MealList() {
   const allMeals = useSelector((state) => state.meals.mealList);
 
   useEffect(() => {
-    
     dispatch(fetchMeals());
     return () => {
       // cleanup
