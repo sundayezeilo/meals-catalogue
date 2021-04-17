@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { changeFilter, fetchMeals } from '../../actions/index';
-import Meal from '../../components/Meal/Meal';
+import Meal from '../../components/meal/Meal';
 import CategoryFilter from '../../components/category-filter/CategoryFilter';
 import './MealList.css';
 
@@ -34,13 +34,13 @@ export default function MealList() {
   }
 
   return (
-    <div className="meals">
+    <div className="meals container-fluid">
       <CategoryFilter onFilterChange={handleFilterChange} categoryList={allCat} />
-      <div className="meal-list">
+      <div className="meal-list row">
         {
           filteredMeals.map((catMeals) => (
             catMeals.meals.map((thisMeal, idx) => (
-              <Meal meal={thisMeal} key={`catMeal${idx + 1}`} />
+              <Meal meal={thisMeal} mealCat={catMeals.mealCategory} key={`catMeal${idx + 1}`} />
             ))
           ))
         }

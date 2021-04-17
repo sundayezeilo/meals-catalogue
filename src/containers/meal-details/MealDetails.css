@@ -1,0 +1,19 @@
+.meal-item-detail {
+  width: 90%;
+  height: 40vw;
+  margin: 30px auto;
+  background-color: #ccc;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 70% 95%;
+}
+
+.meal-detail-title {
+  max-width: 30%;
+  padding: 10px 20px;
+}
+
+.meal-detail-text {
+  max-width: 30%;
+  padding: 20px;
+}

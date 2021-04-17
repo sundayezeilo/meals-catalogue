@@ -3,10 +3,9 @@ nav a {
 }
 
 .navbar {
-  display: flex;
-  align-items: center;
-  padding: 10px 40px 10px 30px;
-  justify-content: space-between;
+  border-bottom: 2px solid #eee;
+  padding-top: 20px !important;
+  background-color: #555 !important;
 }
 
 .nav-brand {
@@ -20,25 +19,17 @@ nav a {
   border-radius: 50%;
 }
 
-.nav-links {
-  width: 60%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-links a {
-  color: #fdfdfd;
+.nav-link {
   font-size: 20px;
   font-weight: bold;
-  text-decoration: none;
+  color: #fdfdfd !important;
 }
 
 a.nav-home {
-  color: #ffb;
   font-weight: bold;
+  color: #ffb !important;
 }
 
 .nav-links a:hover {
-  color: antiquewhite;
+  color: antiquewhite !important;
 }
