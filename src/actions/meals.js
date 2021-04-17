@@ -31,7 +31,7 @@ const fetchMeals = () => async (dispatch) => {
         mealCategory: currVal.strCategory,
         categoryThumb: currVal.strCategoryThumb,
         categoryDescription: currVal.strCategoryDescription,
-        meals: allMeals[idx].data.meals.slice(0, 12),
+        meals: allMeals[idx].data.meals.slice(0, 24),
       });
       return acc;
     }, []);
