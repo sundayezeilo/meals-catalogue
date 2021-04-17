@@ -19,7 +19,8 @@
     "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off",
     "no-shadow": "off",
-    "dot-notation": "off"
+    "dot-notation": "off",
+    "jsx-a11y/control-has-associated-label": "off"
   },
   "ignorePatterns": [
     "dist/",

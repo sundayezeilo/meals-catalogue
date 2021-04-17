@@ -1,0 +1,141 @@
+/* FOOTER */
+footer {
+  color: white;
+  padding-bottom: 20px;
+}
+
+footer li.a {
+  color: #fff;
+  font-size: 14px;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+footer li.a:hover {
+  color: #f45e05;
+  text-decoration: none;
+}
+
+footer .footer-wrap {
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+footer .footer-wrap .copy {
+  font-size: 12px;
+  padding: 10px;
+}
+
+footer .footer-wrap .copy .privacy-text {
+  color: #f45e05;
+}
+
+footer .footer-wrap .copy,
+footer .footer-wrap .social-wrap,
+footer .footer-wrap .footer-brand {
+  padding-left: 20px;
+}
+
+footer .footer-wrap .page-brand {
+  color: #fff;
+  float: none;
+  font-weight: normal;
+}
+
+footer .footer-wrap .social-wrap {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  footer {
+    margin-top: 40px;
+  }
+
+  footer .copy,
+  footer .social-wrap,
+  footer .footer-brand {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  footer .footer-brand {
+    position: relative;
+    max-width: 25%;
+  }
+}
+
+/* footer social icons */
+ul.social-network {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0 !important;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+/* footer social icons */
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover {
+  background-color: #3b5998;
+}
+
+.social-network a.icoGitHub:hover {
+  background-color: #222;
+}
+
+.social-network a.icoTwitter:hover {
+  background-color: #2af;
+}
+
+.social-network a.icoInstagram:hover {
+  background-color: #222;
+}
+
+.social-network a {
+  background-color: #f45e05;
+}
+
+.social-circle i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-circle:hover i {
+  color: #fff;
+}
+
+.social-circle a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle a:hover i {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}

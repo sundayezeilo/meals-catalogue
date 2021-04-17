@@ -1,0 +1,150 @@
+/* FOOTER */
+
+footer {
+  color: white;
+  padding-bottom: 20px;
+
+  li.a {
+    color: #fff;
+    font-size: 14px;
+    transition-duration: 0.2s;
+
+    &:hover {
+      color: #f45e05;
+      text-decoration: none;
+    }
+  }
+
+  .footer-wrap {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    .copy {
+      font-size: 12px;
+      padding: 10px;
+
+      .privacy-text {
+        color: #f45e05;
+      }
+    }
+
+    .copy,
+    .social-wrap,
+    .footer-brand {
+      padding-left: 20px;
+    }
+
+    .page-brand {
+      color: #fff;
+      float: none;
+      font-weight: normal;
+    }
+
+    .social-wrap {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    margin-top: 40px;
+
+    .copy,
+    .social-wrap,
+    .footer-brand {
+      text-align: center;
+      padding-left: 0;
+    }
+
+    .footer-brand {
+      position: relative;
+      max-width: 25%;
+    }
+  }
+}
+
+/* footer social icons */
+
+ul.social-network {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0 !important;
+
+  li {
+    display: inline;
+    margin: 0 5px;
+  }
+}
+
+/* footer social icons */
+
+.social-network {
+  a.icoLinkedin:hover {
+    background-color: #007bb7;
+  }
+
+  a.icoFacebook:hover {
+    background-color: #3b5998;
+  }
+
+  a.icoGitHub:hover {
+    background-color: #222;
+  }
+
+  a.icoTwitter:hover {
+    background-color: #2af;
+  }
+
+  a.icoInstagram:hover {
+    background-color: #222;
+  }
+
+  a {
+    background-color: #f45e05;
+  }
+}
+
+.social-circle {
+  i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+    color: #595959;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+
+  &:hover i {
+    color: #fff;
+  }
+
+  a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+
+    &:hover i {
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+  }
+}
