@@ -16,16 +16,16 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link to="/" class="nav-link nav-home active" aria-current="page">Home</Link>
+              <Link to="/" className="nav-link nav-home active" aria-current="page">Home</Link>
             </li>
             <li className="nav-item">
-              <Link to="/" class="nav-link">Services</Link>
+              <Link to="/" className="nav-link">Services</Link>
             </li>
             <li className="nav-item">
-              <Link to="/" class="nav-link">About</Link>
+              <Link to="/" className="nav-link">About</Link>
             </li>
             <li className="nav-item">
-              <Link to="/" class="nav-link">Contact</Link>
+              <Link to="/" className="nav-link">Contact</Link>
             </li>
           </ul>
         </div>

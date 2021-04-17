@@ -1,14 +1,27 @@
 /* FOOTER */
 footer {
-  color: white;
+  color: #6ad;
+  height: 80px;
+  padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer li.a {
   color: #fff;
   font-size: 14px;
   -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 footer li.a:hover {
@@ -19,11 +32,11 @@ footer li.a:hover {
 footer .footer-wrap {
   width: 100%;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer .footer-wrap .copy {
@@ -35,16 +48,10 @@ footer .footer-wrap .copy .privacy-text {
   color: #f45e05;
 }
 
-footer .footer-wrap .copy,
-footer .footer-wrap .social-wrap,
-footer .footer-wrap .footer-brand {
-  padding-left: 20px;
-}
-
 footer .footer-wrap .page-brand {
-  color: #fff;
-  float: none;
-  font-weight: normal;
+  color: #a00;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 footer .footer-wrap .social-wrap {
@@ -55,17 +62,11 @@ footer .footer-wrap .social-wrap {
   footer {
     margin-top: 40px;
   }
-
   footer .copy,
   footer .social-wrap,
   footer .footer-brand {
     text-align: center;
     padding-left: 0;
-  }
-
-  footer .footer-brand {
-    position: relative;
-    max-width: 25%;
   }
 }
 
@@ -75,7 +76,6 @@ ul.social-network {
   display: -ms-inline-flexbox;
   display: inline-flex;
   list-style: none;
-  padding: 0;
   margin-bottom: 0 !important;
 }
 
@@ -113,7 +113,7 @@ ul.social-network li {
   margin: 0;
   line-height: 30px;
   text-align: center;
-  color: #595959;
+  color: #333;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
@@ -139,3 +139,4 @@ ul.social-network li {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
+/*# sourceMappingURL=Footer.css.map */
