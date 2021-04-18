@@ -1,22 +1,20 @@
 footer {
-  height: 80px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 0;
+  margin: 0;
+  height: 150px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: #ddd;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 
   .footer-wrap {
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
 
     .legal,
     .privacy-text {
       color: #6ad;
+      padding: 2px;
       font-size: 12px;
-      padding: 10px;
     }
 
     .privacy-text {
@@ -25,32 +23,25 @@ footer {
 
     .footer-brand {
       color: #a00;
-      font-size: 24px;
+      font-size: 14px;
       text-decoration: none;
     }
 
     .social-wrap {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 }
 
-@media (min-width: 768px) {
-  footer {
-    margin-top: 40px;
-
-    .legal,
-    .social-wrap,
-    .footer-brand-wrap {
-      text-align: center;
-      padding-left: 0;
-    }
-  }
+footer .container-fluid {
+  text-align: center;
 }
 
 ul.social-network {
-  padding: 0 30px;
+  padding: 0;
+  width: 25%;
   display: flex;
+  margin: 0 auto;
   list-style: none;
   align-items: center;
   justify-content: space-between;
@@ -66,20 +57,12 @@ ul.social-network {
     background-color: #007bb7;
   }
 
-  a.icoFacebook:hover {
-    background-color: #3b5998;
-  }
-
   a.icoGitHub:hover {
     background-color: #222;
   }
 
   a.icoTwitter:hover {
     background-color: #2af;
-  }
-
-  a.icoInstagram:hover {
-    background-color: #222;
   }
 
   a {
@@ -123,5 +106,45 @@ ul.social-network {
       -ms-transition: all 0.2s;
       transition: all 0.2s;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .footer-wrap {
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+
+      .legal,
+      .privacy-text {
+        font-size: 14px;
+      }
+
+      .privacy-text {
+        color: #f45e05;
+      }
+
+      .footer-brand {
+        font-size: 24px;
+      }
+
+      .social-wrap {
+        font-size: 14px;
+      }
+    }
+  }
+
+  ul.social-network {
+    padding: 0 30px;
+    width: 17%;
   }
 }

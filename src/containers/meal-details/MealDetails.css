@@ -1,21 +1,72 @@
 .meal-item-detail {
-  width: 90%;
+  position: relative;
+  padding: 0 15px 15px 15px;
+}
+
+.meal-detail-img {
+  width: 100%;
   height: 40vw;
-  margin: 40px auto;
-  margin-bottom: 85px;
-  background-color: #ccc;
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: 70% 95%;
+  margin: 20px auto;
+}
+
+.meal-detail-img img {
+  width: 100%;
+  height: 100%;
 }
 
 .meal-detail-title {
-  max-width: 30%;
-  padding: 10px 20px;
+  font-size: 20px;
 }
 
 .meal-detail-text {
-  max-width: 30%;
-  padding: 20px;
-  font-family: "Lilita One", Arial, sans-serif !important;
+  padding: 0;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .meal-item-detail {
+    padding: 0 20px 20px 20px;
+  }
+
+  .meal-detail-img {
+    height: 45vw;
+    margin: 30px auto;
+  }
+
+  .meal-detail-title {
+    font-size: 26px;
+  }
+
+  .meal-detail-text {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .meal-item-detail {
+    display: flex;
+    position: relative;
+    padding-top: 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .meal-detail-img {
+    max-width: 48%;
+    height: 30vw;
+    order: 2;
+    margin-top: 0;
+  }
+
+  .meal-detail-title {
+    top: 20px;
+    width: 45%;
+    position: absolute;
+  }
+
+  .meal-detail-text {
+    order: 1;
+    width: 48%;
+    margin-top: 80px;
+  }
 }

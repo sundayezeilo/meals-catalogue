@@ -1,7 +1,7 @@
 .meal-item {
-  height: 35vw;
+  height: 38vw;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .meal-thumb {
@@ -11,24 +11,35 @@
 
 .meal-item h3 {
   bottom: 0;
+  width: 50%;
   left: 20px;
-  width: 90%;
-  position: absolute;
   color: #000;
   font-size: 14px;
-  text-align: center;
   line-height: 30px;
-  padding: 0 20px;
-  border-radius: 0 20px;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  text-align: center;
+  padding: 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 0 10px;
   background-color: #3aa;
 }
 
 @media (min-width: 768px) {
   .meal-item {
     height: 26vw;
+    margin-bottom: 20px;
   }
 
-  a > .meal-title {
-    font-size: 20px;
+  .meal-item h3 {
+    bottom: 0;
+    width: 90%;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 20px;
+    border-radius: 0 20px;
   }
 }

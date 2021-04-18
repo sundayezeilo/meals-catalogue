@@ -4,13 +4,13 @@ nav a {
 
 .navbar {
   border-bottom: 2px solid #eee;
-  padding-top: 20px !important;
+  padding-top: 15px !important;
   background-color: #555 !important;
 }
 
 .nav-brand {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
 }
 
 .nav-brand img {
@@ -20,7 +20,7 @@ nav a {
 }
 
 .nav-link {
-  font-size: 20px;
+  font-size: 12px;
   font-weight: bold;
   color: #fdfdfd !important;
 }
@@ -32,4 +32,19 @@ a.nav-home {
 
 .nav-links a:hover {
   color: antiquewhite !important;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding-top: 20px !important;
+  }
+
+  .nav-brand {
+    width: 80px;
+    height: 80px;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
 }
