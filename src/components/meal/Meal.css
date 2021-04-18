@@ -1,5 +1,4 @@
 .meal-item {
-  /* max-width: 32%; */
   height: 35vw;
   position: relative;
   margin-bottom: 20px;
@@ -13,12 +12,15 @@
 .meal-item h3 {
   bottom: 0;
   left: 20px;
+  width: 90%;
   position: absolute;
-}
-
-a > .meal-title {
   color: #000;
-  font-size: 18px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+  padding: 0 20px;
+  border-radius: 0 20px;
+  background-color: #3aa;
 }
 
 @media (min-width: 768px) {
@@ -27,6 +29,6 @@ a > .meal-title {
   }
 
   a > .meal-title {
-    font-size: 24px;
+    font-size: 20px;
   }
 }

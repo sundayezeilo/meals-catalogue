@@ -11,7 +11,7 @@ export default function CategoryFilter({ categoryList, onFilterChange }) {
 
   return (
     <div className="category-filter">
-      <span>Filter by category</span>
+      <h3>Filter by category</h3>
       <select name="allMealCategories" onChange={handleFilterChange} defaultValue="All">
         {
           allMealCategories.map((catName) => <option value={catName} key={`${catName}_option`}>{catName}</option>)

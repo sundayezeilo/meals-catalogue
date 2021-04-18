@@ -1,3 +1,27 @@
 .category-filter {
+  width: 30%;
   margin: 30px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-filter h3 {
+  color: #fff;
+  font-size: 16px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin: 0;
+  padding: 0 20px;
+  border-radius: 0 10px;
+  background-color: #3aa;
+}
+
+.category-filter select {
+  width: 150px;
+  height: 30px;
+  outline: none;
+  margin: 0;
+  border-radius: 10px;
 }
