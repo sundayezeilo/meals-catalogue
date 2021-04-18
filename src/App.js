@@ -5,6 +5,7 @@ import MealList from './containers/meal-list/MealList';
 import MealDetails from './containers/meal-details/MealDetails';
 import Footer from './components/footer/Footer';
 import Error from './components/error/Error';
+import './index.css';
 import './App.css';
 
 export default function App() {

@@ -12,13 +12,10 @@
 .meal-detail-title {
   max-width: 30%;
   padding: 10px 20px;
-
-  /* font-family: 'Lilita One', cursive !important; */
 }
 
 .meal-detail-text {
   max-width: 30%;
   padding: 20px;
-
-  /* font-family: 'Lilita One', cursive !important; */
+  font-family: "Lilita One", Arial, sans-serif !important;
 }
