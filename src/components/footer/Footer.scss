@@ -1,7 +1,4 @@
-/* FOOTER */
-
 footer {
-  color: #6ad;
   height: 80px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -10,34 +7,25 @@ footer {
   flex-direction: column;
   justify-content: center;
 
-  li.a {
-    color: #fff;
-    font-size: 14px;
-    transition-duration: 0.2s;
-
-    &:hover {
-      color: #f45e05;
-      text-decoration: none;
-    }
-  }
-
   .footer-wrap {
     width: 100%;
     align-items: center;
     justify-content: space-between;
 
-    .copy {
+    .legal,
+    .privacy-text {
+      color: #6ad;
       font-size: 12px;
       padding: 10px;
-
-      .privacy-text {
-        color: #f45e05;
-      }
     }
 
-    .page-brand {
+    .privacy-text {
+      color: #f45e05;
+    }
+
+    .footer-brand {
       color: #a00;
-      font-size: 20px;
+      font-size: 24px;
       text-decoration: none;
     }
 
@@ -51,29 +39,27 @@ footer {
   footer {
     margin-top: 40px;
 
-    .copy,
+    .legal,
     .social-wrap,
-    .footer-brand {
+    .footer-brand-wrap {
       text-align: center;
       padding-left: 0;
     }
   }
 }
 
-/* footer social icons */
-
 ul.social-network {
-  display: inline-flex;
+  padding: 0 30px;
+  display: flex;
   list-style: none;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 0 !important;
 
   li {
-    display: inline;
     margin: 0 5px;
   }
 }
-
-/* footer social icons */
 
 .social-network {
   a.icoLinkedin:hover {
@@ -102,11 +88,10 @@ ul.social-network {
 }
 
 .social-circle {
-  i {
+  svg {
     margin: 0;
-    line-height: 30px;
+    color: #555;
     text-align: center;
-    color: #333;
     -webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
     -o-transition: all 0.8s;
@@ -114,23 +99,21 @@ ul.social-network {
     transition: all 0.8s;
   }
 
-  &:hover i {
+  &:hover svg {
     color: #fff;
   }
 
   a {
-    display: inline-block;
-    position: relative;
-    margin: 0 auto;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    text-align: center;
     width: 30px;
     height: 30px;
-    font-size: 15px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-    &:hover i {
+    &:hover svg {
       -moz-transform: rotate(360deg);
       -webkit-transform: rotate(360deg);
       transform: rotate(360deg);
