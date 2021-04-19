@@ -39,7 +39,7 @@ footer .container-fluid {
 
 ul.social-network {
   padding: 0;
-  width: 25%;
+  width: 23%;
   display: -webkit-box;
   display: flex;
   margin: 0 auto;
@@ -51,10 +51,6 @@ ul.social-network {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 0 !important;
-}
-
-ul.social-network li {
-  margin: 0 5px;
 }
 
 .social-network a.icoLinkedin:hover {
