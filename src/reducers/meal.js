@@ -28,7 +28,7 @@ const mealReducer = (state = initialState, { type, payload }) => {
     case FETCH_MEALS_FAILURE:
       return {
         loading: false,
-        mealList: '',
+        mealList: [],
         error: payload,
       };
 
