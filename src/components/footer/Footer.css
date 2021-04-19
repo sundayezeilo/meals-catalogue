@@ -1,7 +1,7 @@
 footer {
   margin: 0;
   height: 120px;
-  padding: 15px 0;
+  padding: 10px 0;
   background-color: #ddd;
 }
 
@@ -39,16 +39,15 @@ ul.social-network {
   padding: 0;
   width: 23%;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
   list-style: none;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-bottom: 0 !important;
 }
 
@@ -94,11 +93,11 @@ ul.social-network li {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .social-circle a:hover svg {
@@ -110,46 +109,50 @@ ul.social-network li {
 
 @media (min-width: 768px) {
   footer {
-    height: 100px;
+    height: 80px;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #ddd;
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
+
   footer .footer-wrap {
     width: 100%;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
+
   footer .footer-wrap .legal,
   footer .footer-wrap .privacy-text {
     font-size: 14px;
   }
+
   footer .footer-wrap .privacy-text {
     color: #f45e05;
   }
+
   footer .footer-wrap .footer-brand {
     font-size: 24px;
   }
+
   footer .footer-wrap .social-wrap {
     font-size: 14px;
   }
+
   ul.social-network {
     padding: 0 30px;
     width: 17%;
   }
 }
-/*# sourceMappingURL=Footer.css.map */
