@@ -1,5 +1,9 @@
-@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+/* @import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap'); */
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url('./fonts/Helvetica\ Neue\ LTW0697BlkCnObl.ttf');
+}
 
 * {
   margin: 0;
