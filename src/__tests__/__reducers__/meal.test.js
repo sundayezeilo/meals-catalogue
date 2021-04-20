@@ -13,38 +13,38 @@ const initialState = {
 
 describe('mealReducer', () => {
   const curState = {
-    ...initialState
+    ...initialState,
   };
 
   const action = {
     type: FETCH_MEALS_REQUEST,
-  }
+  };
 
   it('should return the initial state', () => {
-    expect(mealReducer(undefined, {})).toEqual(initialState)
-  })
+    expect(mealReducer(undefined, {})).toEqual(initialState);
+  });
 
   it('should handle FETCH_MEALS_REQUEST', () => {
-
     expect(mealReducer(curState, action)).toEqual(
-      { ...curState, loading: true, }
-    )
-  })
+      { ...curState, loading: true },
+    );
+  });
 
   it('should handle FETCH_MEALS_SUCCESS', () => {
-    action.type = FETCH_MEALS_SUCCESS,
+    action.type = FETCH_MEALS_SUCCESS;
     action.payload = [{}, {}];
     expect(mealReducer(curState, action)).toEqual(
-      { ...curState, loading: false, mealList: [{}, {}] }
-    )
+      { ...curState, loading: false, mealList: [{}, {}] },
+    );
   });
 
   it('should handle FETCH_MEALS_FAILURE', () => {
-    action.type = FETCH_MEALS_FAILURE,
+    action.type = FETCH_MEALS_FAILURE;
     action.payload = 'Error';
     expect(mealReducer(curState, action)).toEqual(
-      { ...curState, loading: false, mealList: [], error: 'Error' }
-    )
+      {
+        ...curState, loading: false, mealList: [], error: 'Error',
+      },
+    );
   });
-  
-})
+});

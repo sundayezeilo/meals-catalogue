@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import CategoryFilter from '../components/category-filter/CategoryFilter';
+import CategoryFilter from '../../components/category-filter/CategoryFilter';
 
 describe('CategoryFilter', () => {
   const allCat = ['cat1', 'cat2'];

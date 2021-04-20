@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
-import Meal from '../components/meal/Meal';
+import Meal from '../../components/meal/Meal';
 
 describe('Meal', () => {
   const thisMeal = {

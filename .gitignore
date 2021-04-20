@@ -24,3 +24,5 @@ yarn-error.log*
 
 /navbar.html
 /src/reset.css
+/sampleTests.js
+/src/__tests__/__actions__/meals.test.js

@@ -6,16 +6,16 @@ import {
 
 const axios = require('axios');
 
-const fetchMealsRequest = () => ({
+export const fetchMealsRequest = () => ({
   type: FETCH_MEALS_REQUEST,
 });
 
-const fetchMealsSuccess = (meals) => ({
+export const fetchMealsSuccess = (meals) => ({
   type: FETCH_MEALS_SUCCESS,
   payload: meals,
 });
 
-const fetchMealsFailure = (error) => ({
+export const fetchMealsFailure = (error) => ({
   type: FETCH_MEALS_FAILURE,
   payload: error,
 });

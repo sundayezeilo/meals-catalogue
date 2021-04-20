@@ -7,8 +7,7 @@ describe('changeFilter', () => {
     const expectedAction = {
       type: CHANGE_FILTER,
       payload: filter,
-    }
+    };
     expect(changeFilter(filter)).toEqual(expectedAction);
-  })
-})
-
+  });
+});
