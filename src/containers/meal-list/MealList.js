@@ -12,9 +12,6 @@ export default function MealList() {
 
   useEffect(() => {
     dispatch(fetchMeals());
-    return () => {
-      // cleanup
-    };
   }, []);
 
   const filteredMeals = filter === 'All' ? allMeals : allMeals.filter((meal) => meal.mealCategory === filter);

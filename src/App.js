@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import MealList from './containers/meal-list/MealList';
-import MealDetails from './containers/meal-details/MealDetails';
+import MealDetails from './components/meal-details/MealDetails';
 import Footer from './components/footer/Footer';
 import Error from './components/error/Error';
 import './index.css';

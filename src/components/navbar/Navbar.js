@@ -10,7 +10,7 @@ export default function Navbar() {
         <div className="nav-brand">
           <img src={logo} alt="brand" />
         </div>
-        <h2 className="brand-text">Meals Catalogue</h2>
+        <h2 className="brand-text">MealsCatalogue</h2>
       </Link>
       <div className="nav-item">
         <Link to="/" className="nav-link nav-home active" aria-current="page">Home</Link>
