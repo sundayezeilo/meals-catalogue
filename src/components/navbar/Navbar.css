@@ -2,15 +2,16 @@ nav a {
   text-decoration: none;
 }
 
-.navbar {
+#navbar {
   border-bottom: 2px solid #eee;
-  padding-top: 15px !important;
+  padding: 15px 0 !important;
   background-color: #555 !important;
 }
 
 .nav-brand {
   width: 60px;
   height: 60px;
+  display: inline-block;
 }
 
 .nav-brand img {
@@ -19,23 +20,28 @@ nav a {
   border-radius: 50%;
 }
 
-.nav-link {
-  font-size: 12px;
-  font-weight: bold;
-  color: #fdfdfd !important;
+.brand-text {
+  margin: 0;
+  height: 20px;
+  color: #a00;
+  font-size: 14px;
+  margin-left: 4px;
+  line-height: 20px;
+  padding: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  background-color: #eee !important;
 }
 
 a.nav-home {
+  font-size: 18px;
   font-weight: bold;
   color: #ffb !important;
 }
 
-.nav-links a:hover {
-  color: antiquewhite !important;
-}
-
 @media (min-width: 768px) {
-  .navbar {
+  #navbar {
     padding-top: 20px !important;
   }
 
@@ -44,7 +50,15 @@ a.nav-home {
     height: 80px;
   }
 
-  .nav-link {
-    font-size: 20px;
+  .brand-text {
+    height: 40px;
+    padding: 0 15px;
+    font-size: 26px;
+    margin-left: 10px;
+    line-height: 40px;
+  }
+
+  a.nav-home {
+    font-size: 24px;
   }
 }
