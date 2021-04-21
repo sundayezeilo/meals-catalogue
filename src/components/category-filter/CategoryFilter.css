@@ -1,0 +1,92 @@
+.category-filter {
+  width: 100%;
+  margin: 30px 15px;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-filter h3 {
+  color: #fff;
+  font-size: 12px;
+  width: 50%;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 0 10px;
+  border-radius: 0 10px;
+  background-color: #3aa;
+}
+
+.category-filter select {
+  width: 50%;
+  height: 30px;
+  outline: none;
+  margin-left: 20px;
+  padding: 0 10px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+option {
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .category-filter {
+    width: 70%;
+  }
+
+  .category-filter h3 {
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    width: 50%;
+    text-align: center;
+    line-height: 40px;
+    padding: 0 20px;
+    border-radius: 0 15px;
+    background-color: #3aa;
+  }
+
+  .category-filter select {
+    width: 50%;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 15px;
+  }
+
+  option {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .category-filter {
+    width: 66%;
+  }
+
+  .category-filter h3 {
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    width: 50%;
+    text-align: center;
+    line-height: 40px;
+    padding: 0 20px;
+    border-radius: 0 15px;
+    background-color: #3aa;
+  }
+
+  .category-filter select {
+    width: 50%;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 15px;
+  }
+
+  option {
+    font-size: 18px;
+  }
+}
