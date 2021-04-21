@@ -1,0 +1,148 @@
+footer {
+  margin: 0;
+  height: 120px;
+  padding: 10px 0;
+  background-color: #ddd;
+
+  .footer-wrap {
+    width: 100%;
+
+    .legal,
+    .privacy-text {
+      color: #6ad;
+      padding: 2px;
+      font-size: 12px;
+    }
+
+    .privacy-text {
+      color: #f45e05;
+    }
+
+    .footer-brand {
+      color: #a00;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .social-wrap {
+      font-size: 12px;
+    }
+  }
+}
+
+footer .container-fluid {
+  padding: 0;
+  text-align: center;
+}
+
+ul.social-network {
+  padding: 0;
+  width: 23%;
+  display: flex;
+  margin: 0 auto;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0 !important;
+
+  li {
+    margin: 0 5px;
+  }
+}
+
+.social-network {
+  a.icoLinkedin:hover {
+    background-color: #007bb7;
+  }
+
+  a.icoGitHub:hover {
+    background-color: #222;
+  }
+
+  a.icoTwitter:hover {
+    background-color: #2af;
+  }
+
+  a {
+    background-color: #f45e05;
+  }
+}
+
+.social-circle {
+  svg {
+    margin: 0;
+    color: #555;
+    text-align: center;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+
+  &:hover svg {
+    color: #fff;
+  }
+
+  a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover svg {
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    height: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .footer-wrap {
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+
+      .legal,
+      .privacy-text {
+        font-size: 14px;
+      }
+
+      .privacy-text {
+        color: #f45e05;
+      }
+
+      .footer-brand {
+        font-size: 24px;
+      }
+
+      .social-wrap {
+        font-size: 14px;
+      }
+    }
+  }
+
+  ul.social-network {
+    padding: 0 30px;
+    width: 17%;
+  }
+}

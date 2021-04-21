@@ -1,0 +1,13 @@
+.app {
+  width: 98%;
+  margin: 0 auto;
+  min-width: 320px;
+  background-color: #555;
+}
+
+@media (min-width: 768px) {
+  .app {
+    width: 95%;
+    padding: 0 30px;
+  }
+}

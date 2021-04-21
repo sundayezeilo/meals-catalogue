@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Helvetica Neue Medium";
+  src: url('./fonts/Helvetica-Neue-Medium-Extended.ttf');
+}
+
+@font-face {
+  font-family: "Helvetica Neue LT";
+  src: url('./fonts/Helvetica-Neue-LT.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue LT", Arial, sans-serif;
+}
+
+@media (min-width: 768px) {
+  * {
+    font-family: "Helvetica Neue Medium", Arial, sans-serif;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}

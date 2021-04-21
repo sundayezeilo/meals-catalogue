@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Meal snapshot renders 1`] = `
+<div
+  className="meal-item col-md-6 col-lg-4"
+>
+  <a
+    className="meal-link"
+    href="/baked salmon with fennel & tomatoes"
+    onClick={[Function]}
+  >
+    <h3
+      className="meal-title"
+    >
+      Baked salmon with fennel & tomatoes
+    </h3>
+    <img
+      alt="Baked salmon with fennel & tomatoes"
+      className="meal-thumb"
+      src="https://www.themealdb.com/images/media/meals/1548772327.jpg"
+    />
+  </a>
+</div>
+`;
